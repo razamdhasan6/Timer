@@ -1,0 +1,67 @@
+/* style.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "value"
+        "text"
+        "btn";
+    grid-gap: 1.5rem;
+    text-align: center;
+    background-color: rgb(218, 216, 216);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px;
+    margin: 1rem;
+}
+
+.value {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    font-size: 3rem;
+    grid-area: value;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    font-size: 1.5rem;
+    grid-area: text;
+    font-weight: bold;
+}
+
+.btn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-area: btn;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: rgb(49, 88, 216);
+    color: white;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    border: none;
+}
+.timer-value {
+    margin-top: 10px;
+    font-size: 1.8em;
+    color: #bd1f1f;
+
+}
+
